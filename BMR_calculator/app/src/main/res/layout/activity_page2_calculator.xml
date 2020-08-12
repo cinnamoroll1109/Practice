@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2_calculator">
+
+    <TextView
+        android:id="@+id/p2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:padding="@dimen/text_padding"
+        android:layout_centerHorizontal="true"
+        android:text="BMR 計算機" />
+
+    <TextView
+        android:id="@+id/p2_tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2_title"
+        android:textSize="@dimen/text_size"
+        android:text="姓名:" />
+    
+    <EditText
+        android:id="@+id/p2_etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="輸入文字"
+        android:textColorHint="#95A1AA"
+        android:layout_below="@id/p2_tvName" />
+
+    <TextView
+        android:id="@+id/p2_tvSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2_etName"
+        android:textSize="@dimen/text_size"
+        android:text="性別:" />
+
+    <RadioGroup
+        android:id="@+id/p2_radio_group1"
+        android:layout_toRightOf="@id/p2_tvSex"
+        android:layout_below="@id/p2_etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/p2_rbWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="女" />
+
+        <RadioButton
+            android:id="@+id/p2_rbMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_below="@id/p2_rbWoman"
+            android:text="男" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/p2_tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2_radio_group1"
+        android:textSize="@dimen/text_size"
+        android:text="年齡:" />
+
+    <EditText
+        android:id="@+id/p2_etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="輸入年齡"
+        android:textColorHint="#95A1AA"
+        android:layout_below="@id/p2_tvAge" />
+
+    <TextView
+        android:id="@+id/p2_tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2_etAge"
+        android:textSize="@dimen/text_size"
+        android:text="身高:" />
+
+    <EditText
+        android:id="@+id/p2_etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="輸入身高"
+        android:textColorHint="#95A1AA"
+        android:layout_below="@id/p2_tvHeight" />
+
+    <TextView
+        android:id="@+id/p2_tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2_etHeight"
+        android:textSize="@dimen/text_size"
+        android:text="體重:" />
+
+    <EditText
+        android:id="@+id/p2_etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="輸入體重"
+        android:textColorHint="#95A1AA"
+        android:layout_below="@id/p2_tvWeight" />
+
+    <Button
+        android:id="@+id/p2_btnClear"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/p2_etWeight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="158dp"
+        android:textSize="@dimen/button_text_size"
+        android:text="清除" />
+
+    <Button
+        android:id="@+id/p2_btnSend"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/button_text_size"
+        android:text="送出" />
+
+</RelativeLayout>

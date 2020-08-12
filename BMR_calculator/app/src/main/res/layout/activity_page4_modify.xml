@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page4_modify">
+
+    <TextView
+        android:id="@+id/p4_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:textSize="@dimen/text_size"
+        android:text="NAME" />
+
+    <EditText
+        android:id="@+id/p4_etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_toRightOf="@id/p4_name"
+        android:layout_marginLeft="@dimen/h_padding"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/p4_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:textSize="@dimen/text_size"
+        android:layout_below="@id/p4_name"
+        android:text="GENDER" />
+
+    <Spinner
+        android:id="@+id/p4_spSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p4_name"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_toRightOf="@id/p4_sex"
+        android:textSize="@dimen/text_size"
+        android:layout_marginLeft="@dimen/h_padding"/>
+
+    <TextView
+        android:id="@+id/p4_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_sex"
+        android:textSize="@dimen/text_size"
+        android:text="AGE" />
+
+    <EditText
+        android:id="@+id/p4_etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_sex"
+        android:layout_toRightOf="@id/p4_age"
+        android:layout_marginLeft="@dimen/h_padding"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/p4_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_age"
+        android:textSize="@dimen/text_size"
+        android:text="HEIGHT" />
+
+    <EditText
+        android:id="@+id/p4_etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_age"
+        android:layout_toRightOf="@id/p4_height"
+        android:layout_marginLeft="@dimen/h_padding"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/p4_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_height"
+        android:textSize="@dimen/text_size"
+        android:text="WEIGHT" />
+
+    <EditText
+        android:id="@+id/p4_etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_height"
+        android:layout_toRightOf="@id/p4_weight"
+        android:layout_marginLeft="@dimen/h_padding"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/p4_bmr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_weight"
+        android:textSize="@dimen/text_size"
+        android:text="BMR" />
+
+    <EditText
+        android:id="@+id/p4_etBmr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_below="@id/p4_weight"
+        android:layout_toRightOf="@id/p4_bmr"
+        android:layout_marginLeft="@dimen/h_padding"
+        android:textSize="@dimen/text_size"/>
+
+    <Button
+        android:id="@+id/p4_btnBack"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/p4_bmr"
+        android:layout_marginTop="@dimen/v_padding"
+        android:text="BACK"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/p4_btnEdit"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/p4_bmr"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_toRightOf="@id/p4_btnBack"
+        android:text="EDIT"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/p4_btnDelete"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/p4_bmr"
+        android:layout_marginTop="@dimen/v_padding"
+        android:layout_toRightOf="@id/p4_btnBack"
+        android:layout_marginLeft="60dp"
+        android:textSize="@dimen/button_text_size"
+        android:text="Delete" />
+</RelativeLayout>
