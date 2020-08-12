@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Register Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="button_operation.js"></script>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>會員註冊</h1>
+    <div class="form_style">
+        <form action="login.php" method="POST">
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td>
+                        <input type="text" id="username" name="username" required placeholder="Username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="password" required placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" name="email" placeholder="E-mail"></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Favorite color :</td>
+                    <td><input type="color" name="favcolor" value="ffffff"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="login" value="Login"></td>
+                    <td><input type="submit" name="register" value="Register"></td>
+
+                </tr>
+
+            </table>
+            <script>
+                const username = document.getElementById('username').value;
+                localStorage.setItem("USERNAME", username);
+
+            </script>
+        </form>
+
+    </div>
+
+    <script>
+        function turn_to_memberlist() {
+            const username = document.getElementById('username').value;
+
+            localStorage.setItem("USERNAME", username);
+            window.location.href = "memberlist.html";
+
+            return;
+        }
+
+    </script>
+
+</body>
+
+</html>
