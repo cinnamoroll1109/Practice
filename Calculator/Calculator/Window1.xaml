@@ -1,0 +1,17 @@
+﻿<Window x:Class="Calculator.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Window1" Height="600" Width="900">
+    <Grid Margin="0,0,-1.667,2.667">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="620" Margin="60,60,0,0" ItemsSource="{Binding }" SelectionChanged="dataGrid_SelectionChanged" />
+        <Button x:Name="Button_delete" Content="DELETE" HorizontalAlignment="Left" Margin="720,60,0,0" VerticalAlignment="Top" Width="120" Height="80" Click="Button_delete_Click" />
+        <Button x:Name="Button_previous" Content="PREVIOUS" HorizontalAlignment="Left" Margin="720,180,0,0" VerticalAlignment="Top" Width="120" Height="80" Click="Button_previous_Click"/>
+
+    </Grid>
+    
+    
+</Window>
