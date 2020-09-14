@@ -1,0 +1,6 @@
+persongroupid: group1
+
+test image:
+D:\Visual Studio 2019 projects\Azure_face1\Azure_face1\Images\test\yesung_test_01.png
+
+D:\Visual Studio 2019 projects\Azure_face1\Azure_face1\Images\test\donghae_test_01.png
